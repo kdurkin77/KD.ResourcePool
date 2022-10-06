@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;netstandard2.1;netstandard2.0;</TargetFrameworks>
+    <WarnOn>3388;3389;3390</WarnOn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageId>KD.ResourcePool</PackageId>
+    <Description>A library that pools resources</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>kdurkin77;reed-adams</Authors>
+    <Product>KD.ResourcePool</Product>
+    <RepositoryUrl>https://github.com/kdurkin77/KD.ResourcePool</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/kdurkin77/KD.ResourcePool</PackageProjectUrl>
+    <PackageTags>Resource; Pool</PackageTags>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Extensions.fs" />
+    <Compile Include="ResourcePool.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  
+</Project>
